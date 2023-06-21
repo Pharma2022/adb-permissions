@@ -1,0 +1,60 @@
+*{
+  font-family: 'Inter',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #cccccc;
+}
+h1{
+  text-align: center;
+  padding: 2rem;
+}
+.pointer{
+  cursor: pointer;
+}
+.pointer:hover{
+  text-decoration: underline;
+  opacity: 0.7;
+}
+p{
+  text-align: left;
+}
+.title{
+  font-size: 1.15rem;
+}
+.bold{
+  font-weight: bold;
+}
+.container{
+  margin-inline: auto;
+  padding-inline: .5rem;
+  width: 95%;
+  max-width: 600px;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.flex-row{
+  display: flex;
+}
+.App{
+  font-size: .85rem;
+  gap: .2rem;
+}
+.copy-item-container{
+  padding-block: 1rem;
+  /* border: 1px solid #cccccc; */
+}
+.name{
+  margin-bottom: .35rem;
+}
+
+label{
+  margin-block-start: 1rem;
+}
+input{
+  padding-block:.5rem;
+}
