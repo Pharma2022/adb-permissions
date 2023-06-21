@@ -6,23 +6,23 @@ const permissionsArr=[
   "permissions": [
     {
       "name": "Write Secure Settings",
-      "permission": "android.permission.WRITE_SECURE_SETTINGS"
+      "permission": "net.dinglisch.android.taskerm android.permission.WRITE_SECURE_SETTINGS"
     },
     {
       "name": "Read Logs",
-      "permission": "android.permission.READ_LOGS"
+      "permission": "net.dinglisch.android.taskerm android.permission.READ_LOGS"
     },
     {
       "name": "Dump",
-      "permission": "android.permission.DUMP"
+      "permission": "net.dinglisch.android.taskerm android.permission.DUMP"
     },
     {
       "name": "Set Media Key Listener",
-      "permission": "android.permission.SET_MEDIA_KEY_LISTENER"
+      "permission": "net.dinglisch.android.taskerm android.permission.SET_MEDIA_KEY_LISTENER"
     },
     {
       "name": "Long Press Listener",
-      "permission": "android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
+      "permission": "net.dinglisch.android.taskerm android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
     }
   ]
 },
@@ -32,15 +32,15 @@ const permissionsArr=[
   "permissions": [
     {
       "name": "Write Secure Settings",
-      "permission": "android.permission.WRITE_SECURE_SETTINGS"
+      "permission": "com.joaomgcd.autoinput android.permission.WRITE_SECURE_SETTINGS"
     },
     {
       "name": "Read Logs",
-      "permission": "android.permission.READ_LOGS"
+      "permission": "com.joaomgcd.autoinput android.permission.READ_LOGS"
     },
     {
       "name": "Dump",
-      "permission": "android.permission.DUMP"
+      "permission": "com.joaomgcd.autoinput android.permission.DUMP"
     }
   ]
 },
@@ -50,15 +50,15 @@ const permissionsArr=[
   "permissions": [
     {
       "name": "Write Secure Settings",
-      "permission": "android.permission.WRITE_SECURE_SETTINGS"
+      "permission": "com.joamgcd.autotools android.permission.WRITE_SECURE_SETTINGS"
     },
     {
       "name": "Read Logs",
-      "permission": "android.permission.READ_LOGS"
+      "permission": "com.joamgcd.autotools android.permission.READ_LOGS"
     },
     {
       "name": "Dump",
-      "permission": "android.permission.DUMP"
+      "permission": "com.joamgcd.autotools android.permission.DUMP"
     }
   ]
 },
@@ -68,15 +68,15 @@ const permissionsArr=[
   "permissions": [
     {
       "name": "Write Secure Settings",
-      "permission": "android.permission.WRITE_SECURE_SETTINGS"
+      "permission": "com.joaomgcd.autoapps android.permission.WRITE_SECURE_SETTINGS"
     },
     {
       "name": "Read Logs",
-      "permission": "android.permission.READ_LOGS"
+      "permission": "com.joaomgcd.autoapps android.permission.READ_LOGS"
     },
     {
       "name": "Dump",
-      "permission": "android.permission.DUMP"
+      "permission": "com.joaomgcd.autoapps android.permission.DUMP"
     }
   ]
 },
@@ -86,23 +86,23 @@ const permissionsArr=[
   "permissions": [
     {
       "name": "Write Secure Settings",
-      "permission": "android.permission.WRITE_SECURE_SETTINGS"
+      "permission": "com.franco.doze android.permission.WRITE_SECURE_SETTINGS"
     },
     {
       "name": "Read Logs",
-      "permission": "android.permission.READ_LOGS"
+      "permission": "com.franco.doze android.permission.READ_LOGS"
     },
     {
       "name": "Dump",
-      "permission": "android.permission.DUMP"
+      "permission": "com.franco.doze android.permission.DUMP"
     },
     {
       "name": "Set Media Key Listener",
-      "permission": "android.permission.SET_MEDIA_KEY_LISTENER"
+      "permission": "com.franco.doze android.permission.SET_MEDIA_KEY_LISTENER"
     },
     {
       "name": "Long Press Listener",
-      "permission": "android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
+      "permission": "com.franco.doze android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
     }
   ]
 },
@@ -112,23 +112,23 @@ const permissionsArr=[
   "permissions": [
     {
       "name": "Write Secure Settings",
-      "permission": "android.permission.WRITE_SECURE_SETTINGS"
+      "permission": "com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS"
     },
     {
       "name": "Read Logs",
-      "permission": "android.permission.READ_LOGS"
+      "permission": "com.oasisfeng.greenify android.permission.READ_LOGS"
     },
     {
       "name": "Dump",
-      "permission": "android.permission.DUMP"
+      "permission": "com.oasisfeng.greenify android.permission.DUMP"
     },
     {
       "name": "Set Media Key Listener",
-      "permission": "android.permission.SET_MEDIA_KEY_LISTENER"
+      "permission": "com.oasisfeng.greenify android.permission.SET_MEDIA_KEY_LISTENER"
     },
     {
       "name": "Long Press Listener",
-      "permission": "android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
+      "permission": "com.oasisfeng.greenify android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
     }
   ]
 }
