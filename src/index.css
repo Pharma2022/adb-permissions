@@ -41,6 +41,9 @@ p{
 .flex-row{
   display: flex;
 }
+.wrap{
+  flex-wrap: wrap;
+}
 .App{
   font-size: .85rem;
   gap: .2rem;
