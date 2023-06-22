@@ -1,144 +1,200 @@
-const permissionsArr=[
 
+
+const WRITE_SECURE_SETTINGS="android.permission.WRITE_SECURE_SETTINGS"
+const READ_LOGS= 'android.permission.READ_LOGS'
+const DUMP="android.permission.DUMP"
+const SET_MEDIA_KEY_LISTENER="android.permission.SET_MEDIA_KEY_LISTENER"
+const SET_VOLUME_KEY_LONG_PRESS_LISTENER= "android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
+const FORCE_STOP= 'force-stop'
+const SYSTEM_ALERT_WINDOW='SYSTEM_ALERT_WINDOW allow'
+
+const permissionsArr=[
+{ "name":"Join",
+  "packageName":"com.joaomgcd.join",
+  "permissions":[
+    { "name": "Allow System Window Alerts",
+    "permission": SYSTEM_ALERT_WINDOW,
+    'type': 'appopps'
+
+    },
     {
-  "name": "Tasker",
-  "permission": "net.dinglisch.android.taskerm",
-  "permissions": [
+      "name": "Force Stop",
+      "permission": FORCE_STOP,
+      'type': 'am'
+    },
     {
       "name": "Write Secure Settings",
-      "permission": "net.dinglisch.android.taskerm android.permission.WRITE_SECURE_SETTINGS"
+      "permission": WRITE_SECURE_SETTINGS
     },
     {
       "name": "Read Logs",
-      "permission": "net.dinglisch.android.taskerm android.permission.READ_LOGS"
+      "permission": READ_LOGS
+    },
+  ]
+
+},
+    {
+  "name": "Tasker",
+  "packageName": "net.dinglisch.android.taskerm",
+  "permissions": [
+    {
+      "name": "Force Stop",
+      "permission": FORCE_STOP,
+      'type': 'am'
+    },
+    {
+      "name": "Write Secure Settings",
+      "permission": WRITE_SECURE_SETTINGS
+    },
+    {
+      "name": "Read Logs",
+      "permission": READ_LOGS
     },
     {
       "name": "Dump",
-      "permission": "net.dinglisch.android.taskerm android.permission.DUMP"
+      "permission": DUMP
     },
     {
       "name": "Set Media Key Listener",
-      "permission": "net.dinglisch.android.taskerm android.permission.SET_MEDIA_KEY_LISTENER"
+      "permission": SET_MEDIA_KEY_LISTENER
     },
     {
       "name": "Long Press Listener",
-      "permission": "net.dinglisch.android.taskerm android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
+      "permission": SET_VOLUME_KEY_LONG_PRESS_LISTENER
     }
   ]
 },
 {
   "name": "AutoInput",
-  "permission": "com.joaomgcd.autoinput",
+  "packageName": "com.joaomgcd.autoinput",
   "permissions": [
     {
+      "name": "Force Stop",
+      "permission": FORCE_STOP,
+      'type': 'am'
+    },
+    {
       "name": "Write Secure Settings",
-      "permission": "com.joaomgcd.autoinput android.permission.WRITE_SECURE_SETTINGS"
+      "permission": WRITE_SECURE_SETTINGS
     },
     {
       "name": "Read Logs",
-      "permission": "com.joaomgcd.autoinput android.permission.READ_LOGS"
+      "permission": READ_LOGS
     },
     {
       "name": "Dump",
-      "permission": "com.joaomgcd.autoinput android.permission.DUMP"
+      "permission": DUMP
     }
   ]
 },
 {
   "name": "AutoTools",
-  "permission": "com.joamgcd.autotools",
+  "packageName": "com.joamgcd.autotools",
   "permissions": [
     {
+      "name": "Force Stop",
+      "permission": FORCE_STOP,
+      'type': 'am'
+    },
+    {
       "name": "Write Secure Settings",
-      "permission": "com.joamgcd.autotools android.permission.WRITE_SECURE_SETTINGS"
+      "permission": WRITE_SECURE_SETTINGS
     },
     {
       "name": "Read Logs",
-      "permission": "com.joamgcd.autotools android.permission.READ_LOGS"
+      "permission": READ_LOGS
     },
     {
       "name": "Dump",
-      "permission": "com.joamgcd.autotools android.permission.DUMP"
+      "permission": DUMP
     }
   ]
 },
 {
   "name": "AutoLaunch",
-  "permission": "com.joaomgcd.autoapps",
+  "packageName": "com.joaomgcd.autoapps",
   "permissions": [
     {
+      "name": "Force Stop",
+      "permission": FORCE_STOP,
+      'type': 'am'
+    },
+    {
       "name": "Write Secure Settings",
-      "permission": "com.joaomgcd.autoapps android.permission.WRITE_SECURE_SETTINGS"
+      "permission": WRITE_SECURE_SETTINGS
     },
     {
       "name": "Read Logs",
-      "permission": "com.joaomgcd.autoapps android.permission.READ_LOGS"
+      "permission": READ_LOGS
     },
     {
       "name": "Dump",
-      "permission": "com.joaomgcd.autoapps android.permission.DUMP"
+      "permission": DUMP
     }
   ]
 },
 {
   "name": "Naptime",
-  "permission": "com.franco.doze",
+  "packageName": "com.franco.doze",
   "permissions": [
     {
+      "name": "Force Stop",
+      "permission": FORCE_STOP,
+      'type': 'am'
+    },
+    {
       "name": "Write Secure Settings",
-      "permission": "com.franco.doze android.permission.WRITE_SECURE_SETTINGS"
+      "permission": WRITE_SECURE_SETTINGS
     },
     {
       "name": "Read Logs",
-      "permission": "com.franco.doze android.permission.READ_LOGS"
+      "permission": READ_LOGS
     },
     {
       "name": "Dump",
-      "permission": "com.franco.doze android.permission.DUMP"
+      "permission": DUMP
     },
     {
       "name": "Set Media Key Listener",
-      "permission": "com.franco.doze android.permission.SET_MEDIA_KEY_LISTENER"
+      "permission": SET_MEDIA_KEY_LISTENER
     },
     {
       "name": "Long Press Listener",
-      "permission": "com.franco.doze android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
+      "permission": SET_VOLUME_KEY_LONG_PRESS_LISTENER
     }
   ]
 },
 {
   "name": "Greenify",
-  "permission": "com.oasisfeng.greenify",
+  "packageName": "com.oasisfeng.greenify",
   "permissions": [
     {
+      "name": "Force Stop",
+      "permission": FORCE_STOP,
+      'type': 'am'
+    },
+    {
       "name": "Write Secure Settings",
-      "permission": "com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS"
+      "permission": WRITE_SECURE_SETTINGS
     },
     {
       "name": "Read Logs",
-      "permission": "com.oasisfeng.greenify android.permission.READ_LOGS"
+      "permission": READ_LOGS
     },
     {
       "name": "Dump",
-      "permission": "com.oasisfeng.greenify android.permission.DUMP"
+      "permission": DUMP
     },
     {
       "name": "Set Media Key Listener",
-      "permission": "com.oasisfeng.greenify android.permission.SET_MEDIA_KEY_LISTENER"
+      "permission": SET_MEDIA_KEY_LISTENER
     },
     {
       "name": "Long Press Listener",
-      "permission": "com.oasisfeng.greenify android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"
+      "permission": SET_VOLUME_KEY_LONG_PRESS_LISTENER
     }
   ]
 }
-
-
-
-
-
-
-
 
 ]
 

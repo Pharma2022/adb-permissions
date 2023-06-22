@@ -9,32 +9,34 @@ const ADBPermissions = () => {
     setFilter(event.target.value);
   };
 
-  // Filter the items based on the first name property
-  const filteredPermissions = permissionsArr.filter(({ name }) =>
-    name.toLowerCase().startsWith(filter.toLowerCase())
+  const filteredPermissions = permissionsArr.filter(
+    ({ name, packageName }) =>
+      name.toLowerCase().includes(filter.toLowerCase()) ||
+      packageName.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
     <div className='App container flex-col'>
       <h1>ADB Permissions</h1>
 
-        <div className='filter flex-col '>
-        <label className='bold' htmlFor='filter'>Filter by App name</label>
+      <div className='filter flex-col'>
+        <label className='bold' htmlFor='filter'>
+          Filter by App name or Package name
+        </label>
         <input
-            name='filter'
-            type='text'
-            style={{maxWidth:'200px'}}
-            value={filter}
-            onChange={handleFilterChange}
+          name='filter'
+          type='text'
+          style={{ maxWidth: '200px' }}
+          value={filter}
+          onChange={handleFilterChange}
         />
+      </div>
 
-        </div>
-
-      {filteredPermissions.map(({ name, permission, permissions }) => (
+      {filteredPermissions.map(({ name, packageName, permissions }) => (
         <div className='copy-item-container' key={name}>
-          <CopyItem name={name} permission={permission} className={'title'} />
-          {permissions.map(({ name, permission }) => (
-            <CopyItem name={name} permission={permission} key={name} />
+          <CopyItem name={name} packageName={packageName} className={'title'} />
+          {permissions.map(({ name, permission, type }) => (
+            <CopyItem name={name} permission={permission} type={type} packageName={packageName} key={name} />
           ))}
         </div>
       ))}

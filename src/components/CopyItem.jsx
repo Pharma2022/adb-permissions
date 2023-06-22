@@ -3,12 +3,15 @@ import React, { useState } from 'react';
 
 
 
-const CopyItem = ({ name,permission,className }) => {
+const CopyItem = ({ name,permission,className,packageName,type='pm grant' }) => {
 const [isCopied,setIsCopied]=useState(false)
 
+   
 
+ 
+    const permissionText=permission?  type==='pm grant' ? `${type} ${packageName} ${permission} :`:`${type} ${permission} ${packageName}`:
+     packageName
 
-    const permissionText= `${className?'':'pm grant '}${permission}`
   const copyItem = async () => {
     await navigator.clipboard.writeText(permissionText);
     setIsCopied(true);
