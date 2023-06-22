@@ -22,11 +22,11 @@ const [isCopied,setIsCopied]=useState(false)
 
   return (
     <>
-        <p style={{wordBreak:'break-all'}} onClick={copyItem} className={`name ${className}`}>
+        <p style={{wordBreak:'break-all'}} onClick={copyItem} className={`name ${className} copy-container`}>
            <span className='bold'>{name}</span>: <span className='pointer' permission>{permissionText}</span>
-        </p>
         {isCopied&& 
         <span className='copy-button' >Copied!</span>}
+        </p>
     </>
     
   );
