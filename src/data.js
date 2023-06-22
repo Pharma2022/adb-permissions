@@ -14,7 +14,7 @@ const permissionsArr=[
   "permissions":[
     { "name": "Allow System Window Alerts",
     "permission": SYSTEM_ALERT_WINDOW,
-    'type': 'appopps'
+    'type': 'appopps set'
 
     },
     {
