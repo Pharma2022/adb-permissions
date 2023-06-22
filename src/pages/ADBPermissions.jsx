@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import permissionsArr from '../data';
 import CopyItem from '../components/CopyItem';
 
+
 const ADBPermissions = () => {
   const [filter, setFilter] = useState('');
+  const [isAdbVisible,setAdbVisible]=useState(false)
+  const toggleAdb=()=>setAdbVisible(prev=>!prev)
 
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
@@ -18,6 +21,10 @@ const ADBPermissions = () => {
   return (
     <div className='App container flex-col'>
       <h1>ADB Permissions</h1>
+
+      <button onClick={toggleAdb} className={`pointer ${isAdbVisible&&"toggleButton"}`}>Toggle Adb</button>
+
+
 
       <div className='filter flex-col'>
         <label className='bold' htmlFor='filter'>
@@ -36,7 +43,9 @@ const ADBPermissions = () => {
         <div className='copy-item-container' key={name}>
           <CopyItem name={name} packageName={packageName} className={'title'} />
           {permissions.map(({ name, permission, type }) => (
-            <CopyItem name={name} permission={permission} type={type} packageName={packageName} key={name} />
+            <CopyItem name={name} permission={permission} type={type} packageName={packageName} key={name}
+            adbVisible={isAdbVisible}
+            />
           ))}
         </div>
       ))}

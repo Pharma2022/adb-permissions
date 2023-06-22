@@ -16,6 +16,7 @@ h1{
   cursor: pointer;
 }
 .pointer:hover{
+  transform: scale(.95);
   text-decoration: underline;
   opacity: 0.7;
 }
@@ -79,4 +80,18 @@ input{
   background-color: #213547;
   color: whitesmoke;
   margin-left: 1rem;
+}
+button{
+  padding: 1rem;
+  justify-self: flex-end;
+  margin-inline: auto 0;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+
+}
+
+.toggleButton{
+  background-color: #213547;
+  color: whitesmoke;
 }

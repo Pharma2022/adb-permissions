@@ -1,5 +1,33 @@
+const BIND_ACCESSIBILITY_SERVICE={
+  name:"Accessibility Service",
+  permission:"android.permission.BIND_ACCESSIBILITY_SERVICE"
+}
+const ANSWER_PHONE_CALLS={
+  name:'Answer Phone Calls', 
+  permission:"android.permission.ANSWER_PHONE_CALLS" 
+}
 
-
+const CALL_PHONE={
+  name: 'Call Phone', 
+  permission:'android.permission.CALL_PHONE' 
+}
+const BIND_DEVICE_ADMIN= {
+  name:"Lock screen + other administrative action", 
+  permission:"BIND_DEVICE_ADMIN"
+}
+const CHANGE_CONFIGURATION={
+  name:"Change system locale", 
+  permission: "android.permission.CHANGE_CONFIGURATION"
+}
+const PACKAGE_USAGE_STATS={
+  name:"Package usage stats",
+  permission:"android.permission.PACKAGE_USAGE_STATS"
+}
+const PROJECT_MEDIA_ALLOW={
+  name: "Remove screen recording warning",
+  permission: "PROJECT_MEDIA allow",
+  type:"appops set"
+}
 const WRITE_SECURE_SETTINGS={
   name:"Write Secure Settings",
   permission:"android.permission.WRITE_SECURE_SETTINGS"}
@@ -20,7 +48,7 @@ const FORCE_STOP={
   permission:"force-stop",
   'type': 'am'}
 const SYSTEM_ALERT_WINDOW={
-  name:'Allow System Window Alerts',
+  name:'Draw over other apps for web screens',
   permission:"SYSTEM_ALERT_WINDOW allow",
   'type': 'appopps set'}
 
@@ -43,8 +71,11 @@ const permissionsArr=[
     ,WRITE_SECURE_SETTINGS
     ,READ_LOGS
     ,DUMP
+    ,CHANGE_CONFIGURATION,
+    SYSTEM_ALERT_WINDOW,
     ,SET_MEDIA_KEY_LISTENER
-    ,SET_VOLUME_KEY_LONG_PRESS_LISTENER
+    ,SET_VOLUME_KEY_LONG_PRESS_LISTENER,
+    PACKAGE_USAGE_STATS
   ]
 },
 {
@@ -54,7 +85,8 @@ const permissionsArr=[
     FORCE_STOP
     ,WRITE_SECURE_SETTINGS
     ,READ_LOGS
-    ,DUMP
+    ,DUMP,
+    PROJECT_MEDIA_ALLOW
   ]
 },
 {
@@ -75,6 +107,13 @@ const permissionsArr=[
     ,WRITE_SECURE_SETTINGS
     ,READ_LOGS
     ,DUMP
+  ]
+},
+{
+  "name":"Autowear",
+  "packageName":"joaomgcd.autowear",
+  "permissions":[
+    WRITE_SECURE_SETTINGS
   ]
 },
 {
