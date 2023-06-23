@@ -40,7 +40,7 @@ const ADBPermissions = () => {
       </div>
 
       {filteredPermissions.map(({ name, packageName, permissions }) => (
-        <div className='copy-item-container' key={name}>
+        <div className='copy-item-container flex-col' key={name}>
           <CopyItem name={name} packageName={packageName} className={'title'} />
           {permissions.map(({ name, permission, type }) => (
             <CopyItem name={name} permission={permission} type={type} packageName={packageName} key={name}

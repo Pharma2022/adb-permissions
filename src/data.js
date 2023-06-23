@@ -50,7 +50,7 @@ const FORCE_STOP={
 const SYSTEM_ALERT_WINDOW={
   name:'Draw over other apps for web screens',
   permission:"SYSTEM_ALERT_WINDOW allow",
-  'type': 'appopps set'}
+  'type': 'appops set'}
 
 const permissionsArr=[
 { "name":"Join",

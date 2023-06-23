@@ -9,10 +9,10 @@ const [isCopied,setIsCopied]=useState(false)
    
 
  
-    const permissionText=permission? 
-     type==='pm grant' ? `${adbVisible?"adb shell":""} ${type} ${packageName} ${permission}`:
-     type==='am'&& `${adbVisible?"adb -d shell":""} ${type}  ${permission} ${packageName}`
-     :packageName
+    const permissionText=!permission? packageName
+    :(type==='pm grant'||type==='appops set' )? `${adbVisible?"adb shell":""} ${type} ${packageName} ${permission}`
+    : type==='am'&&`${adbVisible?"adb -d shell":""} ${type}  ${permission} ${packageName}`
+ 
 
   const copyItem = async () => {
     await navigator.clipboard.writeText(permissionText);
@@ -23,13 +23,13 @@ const [isCopied,setIsCopied]=useState(false)
 
 
   return (
-    <>
-        <p style={{wordBreak:'break-word'}} onClick={copyItem} className={`name ${className} copy-container`}>
-           <span className='bold'>{name}</span>: <span className='pointer' permission>{permissionText}</span>
+  
+        <p style={{wordBreak:'break-word'}} onClick={copyItem} className={` copy-container ${className}`}>
+           <span className='bold name'>{name}:</span> <span className='pointer' permission>{permissionText}</span>
         {isCopied&& 
         <span className='copy-button' >Copied!</span>}
         </p>
-    </>
+
     
   );
 };
