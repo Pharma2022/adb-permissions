@@ -1,8 +1,11 @@
+import {  GlobalContextProvider } from './hooks/useGlobalContext'
 import ADBPermissions from './pages/ADBPermissions'
 
 function App() { 
   return (
-   <ADBPermissions/>
+    <GlobalContextProvider>
+        <ADBPermissions/>
+    </GlobalContextProvider>
   )
 }
 
