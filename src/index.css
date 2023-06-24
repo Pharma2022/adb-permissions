@@ -108,6 +108,11 @@ button{
   background-color: #213547;
   color: whitesmoke;
 }
+.toggleButtonAdbVisible{
+  color: #213547;
+  background-color: whitesmoke;
+
+}
 .name{
 color: #0d151b
 

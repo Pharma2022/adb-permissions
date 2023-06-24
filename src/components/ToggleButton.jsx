@@ -6,7 +6,7 @@ const ToggleButton = () => {
     const {isAdbVisible,toggleAdb}=useGlobalContext()
   return (
     
-    <button onClick={toggleAdb} className={`pointer ${isAdbVisible&&"toggleButton"}`}>Toggle Adb</button>
+    <button onClick={toggleAdb} className={`pointer ${isAdbVisible?"toggleButtonAdbVisible":"toggleButton"}`}>Toggle Adb</button>
 
   )
 }
