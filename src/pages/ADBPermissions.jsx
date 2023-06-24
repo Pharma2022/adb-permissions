@@ -8,9 +8,7 @@ const ADBPermissions = () => {
   const [isAdbVisible,setAdbVisible]=useState(false)
   const toggleAdb=()=>setAdbVisible(prev=>!prev)
 
-  const handleFilterChange = (event) => {
-    setFilter(event.target.value);
-  };
+  const handleFilterChange = e=>setFilter(e.target.value)
 
   const filteredPermissions = permissionsArr.filter(
     ({ name, packageName }) =>
@@ -26,7 +24,7 @@ const ADBPermissions = () => {
 
 
 
-      <div className='filter flex-col'>
+      <div className='filter container flex-col'>
         <label className='bold' htmlFor='filter'>
           Filter by App name or Package name
         </label>
@@ -40,8 +38,9 @@ const ADBPermissions = () => {
       </div>
 
       {filteredPermissions.map(({ name, packageName, permissions }) => (
-        <div className='copy-item-container flex-col' key={name}>
+        <div className='copy-item-container container flex-col' key={name}>
           <CopyItem name={name} packageName={packageName} className={'title'} />
+          <hr/>
           {permissions.map(({ name, permission, type }) => (
             <CopyItem name={name} permission={permission} type={type} packageName={packageName} key={name}
             adbVisible={isAdbVisible}

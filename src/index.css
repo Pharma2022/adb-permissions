@@ -26,7 +26,12 @@ p{
 }
 .title{
   font-size: 1.15rem;
-  color:#252727
+  /* color:#252727 */
+}
+hr {
+  height: 3px;
+  border: 0;
+  box-shadow: 0 3px 3px -3px #cccc inset;
 }
 .bold{
   font-weight: bold;
@@ -58,8 +63,8 @@ p{
   border-radius: .5rem;
   padding-inline: 1rem;
   gap:1rem;
-  color:#d5e7e7
-  /* border: 1px solid #cccccc; */
+  color:#d5e7e7;
+  box-shadow: 0 4px 4px -4px #cccc inset;
 }
 .name{
   margin-bottom: .35rem;
@@ -104,6 +109,6 @@ button{
   color: whitesmoke;
 }
 .name{
-color: #213547
+color: #0d151b
 
 }
