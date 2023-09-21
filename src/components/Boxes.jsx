@@ -6,7 +6,7 @@ const Boxes = () => {
 
 
   return filteredPermissions.map(({ name, packageName, permissions }) => (
-        <div className='copy-item-container container flex-col' key={name}>
+        <div className='copy-item-container  flex-col' key={name}>
           <CopyItem 
             name={name} 
             packageName={packageName} 

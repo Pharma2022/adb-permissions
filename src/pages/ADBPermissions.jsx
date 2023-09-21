@@ -8,15 +8,15 @@ import useGlobalContext from '../hooks/useGlobalContext';
 
 const ADBPermissions = () => {
 
-  const {filter,isAdbVisible,toggleAdb,handleFilterChange,filteredPermissions}=useGlobalContext()
-
 
 
   return (
     <div className='App container flex-col'>
-      <h1>ADB Permissions</h1>
-    <ToggleButton />
+        <h1>ADB Permissions</h1>
+      <div className='search-container flex-row space-around align-end'>
     <Search />
+    <ToggleButton />
+        </div>
     <Boxes/>
     
 
